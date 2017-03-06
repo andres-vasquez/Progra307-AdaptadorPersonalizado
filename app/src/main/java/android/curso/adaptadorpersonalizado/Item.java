@@ -6,14 +6,16 @@ public class Item {
 	protected String titulo;
 	protected String descripcion;
 	protected int imagen;
+	protected String linkVideo;
 	
 	//Creamos el constructor
-	public Item(int id,String titulo, String descripcion, int imagen)
+	public Item(int id,String titulo, String descripcion, int imagen, String linkVideo)
 	{
 		this.id=id;
 		this.titulo=titulo;
 		this.descripcion=descripcion;
 		this.imagen=imagen;
+		this.linkVideo=linkVideo;
 	}
 
 	public int getId() {
@@ -46,5 +48,13 @@ public class Item {
 
 	public void setImagen(int imagen) {
 		this.imagen = imagen;
+	}
+
+	public String getLinkVideo() {
+		return linkVideo;
+	}
+
+	public void setLinkVideo(String linkVideo) {
+		this.linkVideo = linkVideo;
 	}
 }
